@@ -55,3 +55,8 @@
 .home__icon {
   @apply text-[1rem] text-emerald-500;
 }
+
+/* ===== ::SELECTION ===== */
+::selection {
+  @apply bg-emerald-500 text-white dark:text-gray-900;
+}
