@@ -4,12 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Banquee - Saas Bang Landing Page</title>
+
+    <!-- ===== BOXICONS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 class="text-xl text-gray-800 text-center font-semibold">
-      This template is ready to use for your project!
-    </h1>
+  <body class="font-body font-reguler">
+    <!-- ===== HEADER SECTION ===== -->
+    <header
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-300"
+      id="header"
+    >
+      <div
+        class="header__container container h-24 flex justify-between items-center"
+      >
+        <a href="#" class="header__logo text-[20px] text-emerald-500 font-bold"
+          >banquee.</a
+        >
+
+        <div class="header__menu" id="header-menu">
+          <ul class="header__list flex flex-col gap-6">
+            <li class="header__item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Features</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Compare</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Support</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Blog</a>
+            </li>
+          </ul>
+
+          <!-- theme toggle -->
+          <div
+            class="header__theme absolute inline-block top-6 right-6 text-[1.5rem] cursor-pointer"
+            id="theme-toggle"
+          >
+            <span class="header__icon hidden" id="theme-toggle-dark-icon"
+              >🌙</span
+            >
+            <span class="header__icon hidden" id="theme-toggle-light-icon"
+              >☀️</span
+            >
+          </div>
+
+          <a href="#" class="header__button button w-full mt-6">Account</a>
+        </div>
+
+        <div
+          class="header__toggle inline-block text-[1.5rem] text-gray-900 cursor-pointer"
+          id="header-toggle"
+        >
+          <i class="bx bx-grid-alt"></i>
+        </div>
+      </div>
+    </header>
+    <!-- ===== HEADER SECTION ===== -->
 
     <!-- ===== MAIN JS ===== -->
     <script type="module" src="./src/js/main.js"></script>
