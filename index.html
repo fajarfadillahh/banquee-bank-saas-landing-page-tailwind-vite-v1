@@ -34,7 +34,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center"
+        class="header__container container h-24 flex justify-between items-center lg:relative"
       >
         <a href="#" class="header__logo text-[20px] text-emerald-500 font-bold"
           >banquee.</a
@@ -44,7 +44,9 @@
           class="header__menu md:flex md:items-center md:gap-6 md:dark:bg-transparent"
           id="header-menu"
         >
-          <ul class="header__list flex flex-col gap-6 md:flex-row">
+          <ul
+            class="header__list flex flex-col gap-6 md:flex-row lg:absolute lg:left-1/2 lg:-translate-x-1/2 lg:gap-8"
+          >
             <li class="header__item">
               <a href="#" class="header__link">Home</a>
             </li>
@@ -95,7 +97,7 @@
       <section class="home section">
         <div class="home__container container grid gap-12">
           <div class="home__data justify-self-center text-center">
-            <h1 class="home__title section-title sm:text-[42px]">
+            <h1 class="home__title section-title sm:text-[42px] lg:text-[48px]">
               Let's start banking <br />
               here with us
             </h1>
