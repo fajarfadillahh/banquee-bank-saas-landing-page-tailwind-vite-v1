@@ -13,10 +13,10 @@
     @apply pt-32 pb-16;
   }
   .section-title {
-    @apply text-[36px] text-gray-900 font-bold mb-4 transition-all duration-300 dark:text-white;
+    @apply text-[36px] text-gray-900 font-bold leading-[120%] mb-4 transition-all duration-300 dark:text-white;
   }
   .section-text {
-    @apply text-gray-900 leading-relaxed transition-all duration-300 dark:text-white;
+    @apply text-gray-900 leading-[180%] transition-all duration-300 dark:text-white;
   }
 
   /* button class */
