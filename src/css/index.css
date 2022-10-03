@@ -16,7 +16,7 @@
     @apply text-[36px] text-gray-900 font-bold mb-4 transition-all duration-300;
   }
   .section-text {
-    @apply text-gray-500 leading-relaxed transition-all duration-300;
+    @apply text-gray-900 leading-relaxed transition-all duration-300;
   }
 
   /* button class */
