@@ -13,6 +13,18 @@ function showMenu(menuId, toggleId) {
 }
 showMenu("header-menu", "header-toggle");
 
+// ===== STICKY HEADER =====
+const scrollY = window.pageYOffset;
+
+function stickyHeader() {
+  const header = document.getElementById("header");
+
+  this.scrollY > 5
+    ? header.classList.add("sticky-action")
+    : header.classList.remove("sticky-action");
+}
+window.addEventListener("scroll", stickyHeader);
+
 // ===== DARK MODE =====
 var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
 var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");

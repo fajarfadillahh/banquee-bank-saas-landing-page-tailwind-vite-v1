@@ -43,6 +43,10 @@
 .header__menu.show-menu {
   @apply opacity-100 scale-y-100;
 }
+/* sticky header */
+.header.sticky-action {
+  @apply shadow-[0_4px_8px_rgba(0,0,0,0.1)];
+}
 
 /* ===== HOME SECTION ===== */
 .home__item {
