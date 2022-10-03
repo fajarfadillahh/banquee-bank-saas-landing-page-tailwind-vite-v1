@@ -40,8 +40,11 @@
           >banquee.</a
         >
 
-        <div class="header__menu" id="header-menu">
-          <ul class="header__list flex flex-col gap-6">
+        <div
+          class="header__menu md:flex md:items-center md:gap-6 md:dark:bg-transparent"
+          id="header-menu"
+        >
+          <ul class="header__list flex flex-col gap-6 md:flex-row">
             <li class="header__item">
               <a href="#" class="header__link">Home</a>
             </li>
@@ -61,7 +64,7 @@
 
           <!-- theme toggle -->
           <div
-            class="header__theme absolute inline-block top-6 right-6 text-[1.5rem] cursor-pointer"
+            class="header__theme absolute inline-block top-6 right-6 text-[1.5rem] cursor-pointer md:static"
             id="theme-toggle"
           >
             <span class="header__icon hidden" id="theme-toggle-dark-icon"
@@ -72,11 +75,13 @@
             >
           </div>
 
-          <a href="#" class="header__button button w-full mt-6">Account</a>
+          <a href="#" class="header__button button w-full mt-6 md:mt-0"
+            >Account</a
+          >
         </div>
 
         <div
-          class="header__toggle inline-block text-[1.5rem] text-gray-900 cursor-pointer transition-all duration-300 dark:text-white"
+          class="header__toggle inline-block text-[1.5rem] text-gray-900 cursor-pointer transition-all duration-300 dark:text-white md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-grid-alt"></i>
