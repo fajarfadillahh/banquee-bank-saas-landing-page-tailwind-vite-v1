@@ -43,3 +43,11 @@
 .header__menu.show-menu {
   @apply opacity-100 scale-y-100;
 }
+
+/* ===== HOME SECTION ===== */
+.home__item {
+  @apply inline-flex items-center gap-1 text-[15px] text-gray-900;
+}
+.home__icon {
+  @apply text-[1rem] text-emerald-500;
+}
