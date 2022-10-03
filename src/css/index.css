@@ -13,10 +13,10 @@
     @apply pt-32 pb-16;
   }
   .section-title {
-    @apply text-[36px] text-gray-900 font-bold mb-4 transition-all duration-300;
+    @apply text-[36px] text-gray-900 font-bold mb-4 transition-all duration-300 dark:text-white;
   }
   .section-text {
-    @apply text-gray-900 leading-relaxed transition-all duration-300;
+    @apply text-gray-900 leading-relaxed transition-all duration-300 dark:text-white;
   }
 
   /* button class */
@@ -33,11 +33,11 @@
 /* ===== HEADER SECTION ===== */
 @media screen and (max-width: 767px) {
   .header__menu {
-    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-gray-100 rounded-2xl opacity-0 scale-y-0 origin-top transition-all duration-300;
+    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-gray-100 rounded-2xl opacity-0 scale-y-0 origin-top transition-all duration-300 dark:bg-gray-700;
   }
 }
 .header__link {
-  @apply text-gray-900 font-medium;
+  @apply text-gray-900 font-medium transition-all duration-300 dark:text-white;
 }
 /* show menu */
 .header__menu.show-menu {
@@ -46,7 +46,7 @@
 
 /* ===== HOME SECTION ===== */
 .home__item {
-  @apply inline-flex items-center gap-1 text-[15px] text-gray-900;
+  @apply inline-flex items-center gap-1 text-[15px] text-gray-900 transition-all duration-300 dark:text-white;
 }
 .home__icon {
   @apply text-[1rem] text-emerald-500;

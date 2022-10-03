@@ -11,11 +11,26 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+
+    <!-- On page load or when changing themes, best to add inline in `head` to avoid FOUC -->
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
   </head>
-  <body class="font-body font-reguler">
+  <body
+    class="font-body font-reguler transition-all duration-300 dark:bg-gray-900"
+  >
     <!-- ===== HEADER SECTION ===== -->
     <header
-      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-300"
+      class="header fixed w-full top-0 left-0 bg-white z-50 transition-all duration-300 dark:bg-gray-900"
       id="header"
     >
       <div
@@ -61,7 +76,7 @@
         </div>
 
         <div
-          class="header__toggle inline-block text-[1.5rem] text-gray-900 cursor-pointer"
+          class="header__toggle inline-block text-[1.5rem] text-gray-900 cursor-pointer transition-all duration-300 dark:text-white"
           id="header-toggle"
         >
           <i class="bx bx-grid-alt"></i>
